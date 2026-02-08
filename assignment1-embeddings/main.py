@@ -49,7 +49,7 @@ def main():
     plt.figure(figsize=(10, 8))
     plt.scatter(x, y)
     for i, name in enumerate(labels):
-        plt.annotate(name, (x[i], y[i]), fontsize=3)
+        plt.annotate(name, (x[i], y[i]), fontsize=8)
 
     plt.axis("off")
     plt.savefig(project_path + "visualization.png", dpi=800)
