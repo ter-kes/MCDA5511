@@ -9,9 +9,11 @@ Students with similar interests appear closer together, while those with differe
 
 ![Classmates similarity visualization](a_visualization.png)
 
-To run this project:
+## How to run this project
+
+```bash
 uv sync
 uv run python visualizer.ipynb
-
+```
 
 
