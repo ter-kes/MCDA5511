@@ -7,7 +7,7 @@ Students with similar interests appear closer together, while those with differe
 
 ## Generated Visualization
 
-![Classmates similarity visualization](a_visualization.png)
+![Classmates similarity visualization](visualization.png)
 
 ## How to run this project
 
