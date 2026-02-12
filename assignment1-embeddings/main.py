@@ -20,7 +20,8 @@ def main():
             attendees_map[paragraph] = name
 
     # ---- Generate sentence embeddings ----
-    model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    # Changed model for Question 3 experiment
+    model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2")
     paragraphs = list(attendees_map.keys())
     embeddings = model.encode(paragraphs)
 
