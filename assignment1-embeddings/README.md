@@ -30,3 +30,25 @@ The following figure illustrates a simple three-dimensional example of embedding
 
 ![Example of embeddings](embeddings_example_plot.png)
 
+## Embedding Sensitivity Tests
+
+To test how sensitive the matchmaking results are to the choice of AI model, I compared the original model (`all-MiniLM-L6-v2`) with a larger, more complex model (`all-mpnet-base-v2`).
+
+**Quantitative Results**
+I calculated the Spearman Rank Correlation between the rankings produced by the two models for my own profile ("Nikola Kriznar").
+* **Spearman's Rank Correlation:** 0.3873
+
+This score is surprisingly low (on a scale of 0 to 1), indicating that the choice of model significantly changes which classmates are considered similar to me. The results are highly sensitive to model selection.
+
+**Qualitative Analysis**
+While the results changed significantly, the #1 match remained stable across both models:
+* **Model A (MiniLM) Top 3:** Zilong Wang, Binziya Siddik, Bhavik Kantilal Bhagat
+* **Model B (MPNet) Top 3:** Zilong Wang, Somto Muotoe, Mohammad Pakdoust
+
+The shift in the 2nd and 3rd spots reveals that the models prioritize different semantic features.
+1.  **Zilong Wang** remained #1 in both, likely due to the shared keyword "sports" (My profile: "sports/gym", His: "likes sports").
+2.  **Model A** prioritized "Music," matching me with classmates who explicitly listed music as a hobby (Binziya and Bhavik).
+3.  **Model B** (the more advanced model) successfully identified the semantic link between my interest in "competitive gaming" and classmates who listed "video games" (Somto and Mohammad).
+
+This suggests that the larger MPNet model was better able to capture the semantic relationship between "gaming" and "video games," whereas the smaller MiniLM model relied more heavily on direct keyword overlaps like "music" and "sports."
+
