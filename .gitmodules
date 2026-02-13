@@ -1,0 +1,3 @@
+[submodule "assignment1-embeddings"]
+	path = assignment1-embeddings
+	url = ./assignment1-embeddings

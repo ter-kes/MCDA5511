@@ -1,7 +1,0 @@
-# uv / python env
-lib/
-__pycache__/
-*.pyc
-.env
-.venv
-
