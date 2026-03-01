@@ -1,4 +1,4 @@
-# MCDA5511 - 
+# MCDA5511 - Deep Learning / NLP
 Current Practices in Computing and Data Science I
 
 This repository is for the **MCDA5511 assignments** during the **Winter 2026** semester at **Saint Mary's University**.
