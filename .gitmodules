@@ -1,3 +1,7 @@
 [submodule "assignment1-embeddings"]
 	path = assignment1-embeddings
 	url = git@github.com:bhavik-knight/5511-a1-embeddings.git
+
+[submodule "a2-rag"]
+    path = a2-rag
+    url = git@github.com:bhavik-knight/5511-a2-rag.git
