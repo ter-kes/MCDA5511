@@ -5,3 +5,7 @@
 [submodule "a2-rag"]
     path = a2-rag
     url = git@github.com:bhavik-knight/5511-a2-rag.git
+
+[submodule "a3-nn-trasnformers"]
+    path = a3-nn-transformers
+    url = git@github.com:bhavik-knight/5511-a3-nn-transformers.git
