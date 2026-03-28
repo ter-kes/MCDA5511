@@ -9,3 +9,7 @@
 [submodule "a3-nn-trasnformers"]
     path = a3-nn-transformers
     url = git@github.com:bhavik-knight/5511-a3-nn-transformers.git
+
+[submodule "a4-brain-surgery"]
+    path = a4-brain-surgery
+    url = git@github.com:bhavik-knight/5511-a4-brain-surgery.git
