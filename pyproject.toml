@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparse-autoencoder-llm"
+version = "0.2.0"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.10.0",
+    "datasets>=3.0.0",
+    "huggingface-hub>=1.8.0",
+    "matplotlib>=3.8.0",
+    "mypy>=1.19.1",
+    "pre-commit>=4.5.1",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.2",
+    "ruff>=0.15.8",
+    "scikit-learn>=1.4.0",
+    "sentencepiece>=0.1.99",
+    "torch>=2.11.0",
+    "transformers>=5.4.0",
+    "tqdm>=4.66.0",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+extend-exclude = ["data", "results", "models", ".git"]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["D", "ANN", "UP", "E", "F"]
+ignore = ["D100", "D104"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v"

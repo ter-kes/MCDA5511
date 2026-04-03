@@ -1,0 +1,95 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+pytest.ini
+coverage.xml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Temp/testing files
+tmp_*.py
+*.log
+!README.md
+!requirements.txt
+
+# Large model artifacts (regenerated locally)
+artifacts/
+data/processed/
+models/
+results/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+
+# Runtime artifacts
+*.json
+!package.json
+.env
+.env.local
+.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Cache
+.ruff_cache/
+.mypy_cache/
+.pylint.d/
+
+# External repositories (not managed as submodules)
+# sparse-autoencoder-llm-interpretability-nikola/ is a separate git repo
+# To track it as a submodule instead, use: git submodule add <url> sparse-autoencoder-llm-interpretability-nikola
+sparse-autoencoder-llm-interpretability-nikola/
